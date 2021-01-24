@@ -52,7 +52,7 @@ const pagina = [
         sub_titulo: '¿Cuántos aerosoles exhalamos?',
         texto: 'Al respirar emitimos aerosoles, al hablar emitimos diez veces más y al gritar o cantar hasta 50 veces más aerosoles. Estos aerosoles acaban concentrándose peligrosamente en espacios cerrados o semicerrados con poca ventilación.'
       }, {
-        imagen: '23-aerosoles-y-CO2.jpg',
+        imagen: '23-aerosoles-y-co2.jpg',
         sub_titulo: 'Aerosoles y CO2',
         texto: 'Las concentraciones de CO2 y, por consiguiente, de aerosoles se diluyen fácilmente con una ventilación adecuada. Midiendo el nivel del CO2 podemos saber cuánta cantidad de aerosoles hay en nuestro aula y en qué momento debemos renovar el aire.'
       }
