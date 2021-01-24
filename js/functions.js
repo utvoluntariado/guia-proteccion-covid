@@ -57,7 +57,7 @@ function crearHtml (slide, seccion) {
     <div class="container">
       <img src="img/${slide.imagen}" alt="">
       <div class="subTitle ${clase}">${slide.sub_titulo}</div>
-      <div class="currentSlide">${createDot(seccion)}</div>
+      <div class="currentSlide ${clase}">${createDot(seccion)}</div>
       
       <div class="sections">${createSection()}</div>
       <div class="text">${slide.texto}</div>
