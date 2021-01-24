@@ -56,9 +56,11 @@ h2 {
 h2.yaSabemos, .mySlides.yaSabemos .subTitle { background-color: #3282b8; }
 h2.debemosSaber, .mySlides.debemosSaber .subTitle { background-color: forestgreen; }
 h2.nuestrosExpertos, .mySlides.nuestrosExpertos .subTitle { background-color: orange; }
-
+.slideshow-container {
+  height: calc(100vh - 60px);
+  background-color: #ffffff;
+}
 .mySlides {
-  background-color: #eeeeee;
   position: relative;
   max-width: 900px;
   margin: 0 auto;
@@ -69,7 +71,7 @@ h2.nuestrosExpertos, .mySlides.nuestrosExpertos .subTitle { background-color: or
   color: #000000;
   font-size: 12px;
   position: absolute;
-  bottom: -36px;
+  top: 409px;
   right: 3px;
   background-color: rgb(255, 255, 255, 0.5);
   border-radius: 0 50%;
@@ -77,6 +79,7 @@ h2.nuestrosExpertos, .mySlides.nuestrosExpertos .subTitle { background-color: or
   width: 32px;
   text-align: center;
   line-height: 24px;
+  z-index: 1;
 }
 .mySlides .subTitle {
   background-color: #3282b8;
@@ -85,36 +88,35 @@ h2.nuestrosExpertos, .mySlides.nuestrosExpertos .subTitle { background-color: or
   text-align: center;
   font-size: 22px;
 }
-
 .mySlides .text {
-  padding: 8px;
+  padding: 61px 8px 8px;
   text-align: justify;
 }
-
 .currentSlide {
   text-align: center;
-  margin: 16px auto 0;
+  position: absolute;
+  top: 465px;
+  width: 100%;
+  background-color: rgb(82, 86, 89);
 }
 .dot {
   cursor: pointer;
   height: 16px;
   width: 16px;
-  margin: 0 8px;
+  margin: 8px;
   background-color: #bbb;
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
 }
-
 .yaSabemos .active, .yaSabemos .dot:hover { background-color: #3282b8; }
 .debemosSaber .active, .debemosSaber .dot:hover { background-color: forestgreen; }
 .nuestrosExpertos .active, .nuestrosExpertos .dot:hover { background-color: orange; }
-
 .sections {
   display: grid;
   grid-auto-flow: column;
   position: absolute;
-  bottom: 0;
+  top: 497px;
   width: 100%;
 }
 .sections div { 
@@ -128,5 +130,4 @@ h2.nuestrosExpertos, .mySlides.nuestrosExpertos .subTitle { background-color: or
 .sections .yaSabemos { background-color: #3282b8; }
 .sections .debemosSaber { background-color: forestgreen; }
 .sections .nuestrosExpertos { background-color: orange; }
-
 .hide, .verpdf{ display: none; }
